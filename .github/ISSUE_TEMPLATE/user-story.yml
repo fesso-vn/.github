@@ -1,0 +1,75 @@
+name: User Story
+description: "Describe a User Story"
+title: "[US-XX] User wants to"
+labels:
+  - "Type:UserStory"
+assignees: []
+body:
+  - type: textarea
+    attributes:
+      label: "User Story"
+      id: explanation
+      description: |
+        This is a normal format, we can define another format as wish
+      placeholder: |
+        - As
+        - I want to
+        - So that
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Scenario"
+      id: scenario
+      description: "Step by step of how the actor's journey"
+      value: |
+        #### A. User visits screen and see expectation
+        - User visits screen /somewhere
+        - User sees the expectation
+        #### B. User clicks on the button
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Definition of Done"
+      id: definition-of-done
+      description: |
+        Describe how to know this feature is implemented properly
+        This section should be defined by the Owner (Product Owner or who created this issue)
+      value: |
+        - [ ] Achieve all scenarios above
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "UI"
+      id: ui
+      description: "Mock UI, if any"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Table Definition"
+      id: table-definition
+      description: "Definition of database, if any"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Implementation"
+      id: implementation
+      description: |
+        Software design, API to call ...
+        This section should be defined by Development Team, focusing to technical things
+      placeholder: |
+        - [ ] Makes some changes
+        - [ ] Creates new things
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Reference"
+      id: reference
+      description: "Any related issue, PR, document"
+    validations:
+      required: false

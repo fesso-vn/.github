@@ -1,0 +1,51 @@
+name: Refactoring
+description: Refactoring the code
+title: "Make thing better"
+labels:
+  - "Type:Refactoring"
+assignees: []
+body:
+  - type: textarea
+    attributes:
+      label: "Explanation"
+      id: explanation
+      description: |
+        Describe about the refactoring
+        1. Where is the refactoring targeting to. Ex: frontend/backend; scope ...
+        2. Why it is necessary / good to have
+        3. How to make it
+      placeholder: |
+        Describe about the refactoring:
+        1. Where is the refactoring targeting to. Ex: frontend/backend; scope ...
+        2. Why it is necessary / good to have
+        3. How to make it
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Definition of Done"
+      id: definition-of-done
+      description: |
+        Describe how to know this feature is implemented properly
+        This section should be defined by the Owner (Product Owner or who created this issue)
+      value: |
+        - [ ] There is a better version of the feature
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Implementation"
+      id: implementation
+      description: "This section should be defined by Development Team, focusing to technical things"
+      placeholder: |
+        - [ ] Makes some changes
+        - [ ] Creates new things
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Reference"
+      id: reference
+      description: "Any related issue, PR, document"
+    validations:
+      required: false

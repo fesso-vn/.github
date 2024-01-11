@@ -1,0 +1,29 @@
+name: Bug Report
+description: File a bug report
+title: "true"
+labels:
+  - "Type:Bug"
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: "# Bug report"
+  - type: textarea
+    attributes:
+      id: reproduce
+      label: Reproduce
+      description: Step by step to reproduce the bug
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Reference"
+      id: reference
+      description: "Any related issue, PR, document"
+    validations:
+      required: false

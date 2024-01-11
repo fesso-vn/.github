@@ -1,0 +1,51 @@
+name: Feature
+description: New feature or feature extending
+title: "New feature or feature extending"
+labels:
+  - "Type:Enhancement"
+assignees: []
+body:
+  - type: textarea
+    attributes:
+      label: "Explanation"
+      id: explanation
+      description: |
+        Describe about the new feature
+        1. Where is the feature targeting to. Ex: frontend/backend; scope ...
+        2. Why it is necessary / good to have
+        3. How to make it
+      placeholder: |
+        Describe about the new feature:
+        1. Where is the feature targeting to. Ex: frontend/backend; scope ...
+        2. Why it is necessary / good to have
+        3. How to make it
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Definition of Done"
+      id: definition-of-done
+      description: |
+        Describe how to know this feature is implemented properly
+        This section should be defined by the Owner (Product Owner or who created this issue)
+      value: |
+        - [ ] Achieve the goal
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Implementation"
+      id: implementation
+      description: "This section should be defined by Development Team, focusing to technical things"
+      placeholder: |
+        - [ ] Makes some changes
+        - [ ] Creates new things
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Reference"
+      id: reference
+      description: "Any related issue, PR, document"
+    validations:
+      required: false
